@@ -78,20 +78,21 @@ header a {
 
 .feature-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
 }
 
 .feature {
-    width: 200px;
+    width: 100%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     text-align: center;
+    overflow: hidden; /* Ensures that images do not overflow their container */
 }
 
+/* Ensure images are responsive and fit within the container */
 .feature img {
     width: 100%;
     height: auto;
