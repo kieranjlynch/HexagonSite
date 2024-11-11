@@ -70,7 +70,7 @@ header a {
 }
 
 #features {
-    padding: 60px 0;
+    padding: 0;
     background: #1B1B1E;
     text-align: center;
     color: #FFFFFF;
@@ -81,58 +81,56 @@ header a {
     flex-direction: column;
 }
 
-/* Set each feature section to take up full width and stack vertically */
 .feature {
-    width: 100vw;
+    width: 100%;
+    max-width: 1000px;
     padding: 60px 20px;
-    border-radius: 0; /* Remove border-radius for full-width sections */
-    box-shadow: none; /* Remove box-shadow for a cleaner look */
+    margin: 0 auto;
     color: #FFFFFF;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .feature img {
-    width: 200px; /* Adjust width to fit in the center comfortably */
+    width: 100%;
+    max-width: 500px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 4px;
 }
 
-/* Different background colors for each feature section */
 .feature-date-format {
-    background-color: #FF5733; /* Red */
+    background-color: #FF5733;
 }
 
 .feature-history {
-    background-color: #33A1FF; /* Blue */
+    background-color: #33A1FF;
 }
 
 .feature-limit-wip {
-    background-color: #33FF57; /* Green */
+    background-color: #33FF57;
 }
 
 .feature-lists {
-    background-color: #FF33A1; /* Pink */
+    background-color: #FF33A1;
 }
 
 .feature-locations {
-    background-color: #FFA133; /* Orange */
+    background-color: #FFA133;
 }
 
 .feature-sort {
-    background-color: #A1FF33; /* Lime */
+    background-color: #A1FF33;
 }
 
 .feature-today {
-    background-color: #FF33FF; /* Magenta */
+    background-color: #FF33FF;
 }
 
 .feature-upcoming {
-    background-color: #33FFA1; /* Teal */
+    background-color: #33FFA1;
 }
 
 #about {
