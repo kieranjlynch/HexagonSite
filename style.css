@@ -28,22 +28,27 @@ header .logo {
 }
 
 header .logo img.app-icon {
-    width: 40px; /* Adjust size as needed */
+    width: 60px; 
     height: auto;
     margin-right: 10px;
 }
 
-header a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #FFFFFF;
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-header .btn {
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 4px;
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 #hero {
@@ -121,10 +126,4 @@ footer {
     padding: 20px;
     text-align: center;
     color: #FFFFFF;
-}
-
-.social-links a {
-    color: #FFFFFF;
-    margin: 0 10px;
-    text-decoration: none;
 }
