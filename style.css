@@ -79,6 +79,8 @@ header a {
 .feature-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .feature {
@@ -86,19 +88,36 @@ header a {
     max-width: 1000px;
     padding: 60px 20px;
     margin: 0 auto;
-    color: #FFFFFF;
-    text-align: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
 }
 
 .feature img {
-    width: 100%;
-    max-width: 500px;
+    width: 150%; /* 50% larger than original */
+    max-width: 600px;
     height: auto;
-    margin-bottom: 20px;
     border-radius: 4px;
+}
+
+.feature:nth-child(odd) {
+    flex-direction: row;
+    text-align: right;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
 }
 
 .feature-date-format {
