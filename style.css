@@ -79,36 +79,22 @@ header a {
 .feature-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
 .feature {
-    width: 100%;
-    max-width: 1000px;
-    padding: 60px 20px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
+    padding: 60px 10%;
     color: #FFFFFF;
 }
 
 .feature img {
-    width: 150%; /* 50% larger than original */
-    max-width: 600px;
+    width: 75%; 
+    max-width: 450px;
     height: auto;
     border-radius: 4px;
-}
-
-.feature:nth-child(odd) {
-    flex-direction: row;
-    text-align: right;
-}
-
-.feature:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: left;
 }
 
 .feature h3 {
@@ -120,6 +106,18 @@ header a {
     font-size: 16px;
 }
 
+/* Alternating layout for each feature */
+.feature:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* Background colors for each feature */
 .feature-date-format {
     background-color: #FF5733;
 }
