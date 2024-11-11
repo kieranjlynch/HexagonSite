@@ -69,14 +69,6 @@ header a {
     color: #DDDDDD;
 }
 
-.cta-btn {
-    background: #333;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
 #features {
     padding: 60px 20px;
     background: #1B1B1E;
@@ -94,9 +86,50 @@ header a {
 .feature {
     width: 200px;
     padding: 20px;
-    background: #2C2C2E;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Different background colors for each feature section */
+.feature-date-format {
+    background-color: #FF5733; /* Red */
+}
+
+.feature-history {
+    background-color: #33A1FF; /* Blue */
+}
+
+.feature-limit-wip {
+    background-color: #33FF57; /* Green */
+}
+
+.feature-lists {
+    background-color: #FF33A1; /* Pink */
+}
+
+.feature-locations {
+    background-color: #FFA133; /* Orange */
+}
+
+.feature-sort {
+    background-color: #A1FF33; /* Lime */
+}
+
+.feature-today {
+    background-color: #FF33FF; /* Magenta */
+}
+
+.feature-upcoming {
+    background-color: #33FFA1; /* Teal */
 }
 
 #about {
@@ -104,21 +137,6 @@ header a {
     text-align: center;
     background: #1B1B1E;
     color: #FFFFFF;
-}
-
-#download {
-    background: #333;
-    color: #FFFFFF;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.download-btn {
-    background: #007bff;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
 }
 
 footer {
