@@ -70,7 +70,7 @@ header a {
 }
 
 #features {
-    padding: 60px 20px;
+    padding: 60px 0;
     background: #1B1B1E;
     text-align: center;
     color: #FFFFFF;
@@ -79,24 +79,26 @@ header a {
 .feature-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
+/* Set each feature section to take up full width and stack vertically */
 .feature {
-    width: 100%;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 60px 20px;
+    border-radius: 0; /* Remove border-radius for full-width sections */
+    box-shadow: none; /* Remove box-shadow for a cleaner look */
     color: #FFFFFF;
     text-align: center;
-    overflow: hidden; /* Ensures that images do not overflow their container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Ensure images are responsive and fit within the container */
 .feature img {
-    width: 100%;
+    width: 200px; /* Adjust width to fit in the center comfortably */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 4px;
 }
 
