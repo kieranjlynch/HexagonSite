@@ -1,158 +1,183 @@
-* {
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #1B1B1E;
-    color: #FFFFFF;
+    color: #333;
     line-height: 1.6;
+    background-color: #f4f4f9;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #1B1B1E;
+h1, h2, h3 {
+    margin: 0;
+    color: #2c3e50;
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFFFFF;
+p {
+    margin: 0 0 1em;
 }
 
-header .logo img.app-icon {
-    width: 60px; 
-    height: auto;
-    margin-right: 10px;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-header a {
+a {
     text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
+    color: #007aff;
 }
 
-#hero {
-    background: #1B1B1E;
-    text-align: center;
-    padding: 80px 20px;
+a:hover {
+    text-decoration: underline;
 }
 
-#hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-#hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #DDDDDD;
-}
-
-#features {
-    padding: 0;
-    background: #1B1B1E;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.feature-list {
+/* Navbar */
+.navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
 }
 
-.feature {
+.navbar .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 60px;
-    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007aff;
 }
 
-.feature img {
-    width: 75%; 
-    max-width: 450px;
-    height: auto;
-    border-radius: 4px;
+.navbar .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5em;
 }
 
-.feature h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
 }
 
-.feature p {
-    font-size: 16px;
+.navbar .nav-links li {
+    display: inline;
 }
 
-/* Alternating layout for each feature */
-.feature:nth-child(odd) {
-    flex-direction: row;
-    text-align: left;
+.navbar .nav-links a {
+    font-size: 1em;
+    font-weight: 500;
 }
 
-.feature:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-/* Background colors for each feature */
-.feature-date-format {
-    background-color: #FF5733;
-}
-
-.feature-history {
-    background-color: #33A1FF;
-}
-
-.feature-limit-wip {
-    background-color: #33FF57;
-}
-
-.feature-lists {
-    background-color: #FF33A1;
-}
-
-.feature-locations {
-    background-color: #FFA133;
-}
-
-.feature-sort {
-    background-color: #A1FF33;
-}
-
-.feature-today {
-    background-color: #FF33FF;
-}
-
-.feature-upcoming {
-    background-color: #33FFA1;
-}
-
-footer {
-    background: #1B1B1E;
-    padding: 20px;
+/* Hero Section */
+.hero {
     text-align: center;
-    color: #FFFFFF;
+    padding: 4em 2em;
+    background: #007aff;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background: #fff;
+    color: #007aff;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #f2f2f2;
+}
+
+/* Features Section */
+.features {
+    padding: 3em 2em;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.feature-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 3em 2em;
+    background: #fff;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.pricing-plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2em;
+    width: 300px;
+    background: #f9f9f9;
+}
+
+.pricing-plan .price {
+    font-size: 1.5em;
+    color: #007aff;
+    margin: 1em 0;
+}
+
+/* Download Section */
+.download {
+    padding: 3em 2em;
+    text-align: center;
+    background: #007aff;
+    color: #fff;
+}
+
+.download a.cta-button {
+    background: #fff;
+    color: #007aff;
+}
+
+/* Footer */
+.footer {
+    padding: 2em;
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
 }

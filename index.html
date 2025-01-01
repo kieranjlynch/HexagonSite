@@ -3,77 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexagon - The Ultimate Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hexagon - Your Apple-Centric Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="logo">
-                <img src="assets/Hexagon App.png" alt="Hexagon App Icon" class="app-icon">
-                Hexagon
-            </h1>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="HexLogo.jpeg" alt="Hexagon Logo" class="logo-img"> Hexagon
             </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-    </header>    
+        <div class="hero-content">
+            <h1>Hexagon</h1>
+            <p>Your ultimate task manager for Apple platforms. Stay organized, focused, and productive.</p>
+            <a href="#download" class="cta-button">Get Hexagon</a>
+        </div>
+    </header>
 
-    <section id="hero">
-        <h2>Organise Your Work, Life or Side Projects with Hexagon</h2>
-        <p>Effortlessly manage tasks and stay productive.</p>
-    </section>
-
-    <section id="features">
+    <section id="features" class="features">
         <h2>Features</h2>
-        <div class="feature-list">
-            <div class="feature feature-date-format">
-                <img src="assets/date format.png" alt="Date Format Feature">
-                <h3>Date Format</h3>
-                <p>Format dates the way you like them.</p>
+        <div class="features-container">
+            <div class="feature-item">
+                <h3>iCloud Sync</h3>
+                <p>Seamlessly sync tasks across your Apple devices using iCloud.</p>
             </div>
-            <div class="feature feature-history">
-                <img src="assets/history.png" alt="History Feature">
-                <h3>History</h3>
-                <p>See every task you have completed and when.</p>
+            <div class="feature-item">
+                <h3>Focus Mode</h3>
+                <p>Stay focused with tailored views and productivity timers.</p>
             </div>
-            <div class="feature feature-limit-wip">
-                <img src="assets/limit wip.png" alt="Limit WIP Feature">
-                <h3>Limit WIP</h3>
-                <p>Limit the tasks you start or complete each day. Or not. It’s up to you.</p>
-            </div>
-            <div class="feature feature-lists">
-                <img src="assets/lists.png" alt="Lists Feature">
-                <h3>Lists</h3>
-                <p>Arrange tasks by lists to stay organised.</p>
-            </div>
-            <div class="feature feature-locations">
-                <img src="assets/locations.png" alt="Locations Feature">
-                <h3>Locations</h3>
-                <p>Get reminders when you enter a location.</p>
-            </div>
-            <div class="feature feature-sort">
-                <img src="assets/sort.png" alt="Sort Feature">
-                <h3>Sort</h3>
-                <p>Sort tasks the way you want to.</p>
-            </div>
-            <div class="feature feature-today">
-                <img src="assets/today.png" alt="Today Feature">
-                <h3>Today</h3>
-                <p>Command and control for everything due in the day ahead.</p>
-            </div>
-            <div class="feature feature-upcoming">
-                <img src="assets/upcoming.png" alt="Upcoming Feature">
-                <h3>Upcoming</h3>
-                <p>View tasks and calendar events side by side to see how busy your week is.</p>
+            <div class="feature-item">
+                <h3>Natural Language Input</h3>
+                <p>Add tasks quickly with natural language input, just like magic.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Hexagon. All Rights Reserved.</p>
+    <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-options">
+            <div class="pricing-plan">
+                <h3>Free</h3>
+                <p>Basic features for individuals.</p>
+                <p class="price">£0/month</p>
+            </div>
+            <div class="pricing-plan">
+                <h3>Pro</h3>
+                <p>Advanced features for power users.</p>
+                <p class="price">£4/month or £30/year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download Hexagon</h2>
+        <p>Available now on the App Store for iPhone, iPad, and Mac.</p>
+        <a href="#" class="cta-button">Download on the App Store</a>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Hexagon. All rights reserved.</p>
+            <p><a href="mailto:support@hexagonapp.com">support@hexagonapp.com</a></p>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
