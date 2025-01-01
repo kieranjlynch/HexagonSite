@@ -12,10 +12,9 @@
     --primary-color: #1E90FF; /* Adjusted to complement dark mode */
     --secondary-color: #ecf0f1;
     --background-dark: #121212;
-    --background-light: #1e1e1e; /* Renamed for dark mode */
+    --background-container: #1e1e1e;
     --background-navbar: #1e1e1e;
     --text-color: #ecf0f1;
-    --text-light: #ffffff;
     --accent-color: #34495e;
     --button-hover-bg: #34495e;
     --footer-bg: #1e1e1e;
@@ -165,7 +164,7 @@ a:hover, a:focus {
 /* Features Section */
 .features {
     padding: 3em 2em;
-    background: var(--background-light);
+    background: var(--background-container);
     text-align: center;
     transition: background var(--transition-speed);
 }
@@ -183,7 +182,7 @@ a:hover, a:focus {
 }
 
 .feature-item {
-    background: var(--background-light);
+    background: var(--background-container);
     border: 1px solid var(--accent-color);
     border-radius: 8px;
     padding: 1.5em;
@@ -201,7 +200,7 @@ a:hover, a:focus {
 /* Pricing Section */
 .pricing {
     padding: 3em 2em;
-    background: var(--background-light);
+    background: var(--background-container);
     text-align: center;
     transition: background var(--transition-speed), color var(--transition-speed);
 }
@@ -224,7 +223,7 @@ a:hover, a:focus {
     padding: 2em;
     width: 100%;
     max-width: 300px;
-    background: var(--background-light);
+    background: var(--background-container);
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
@@ -244,14 +243,19 @@ a:hover, a:focus {
     padding: 3em 2em;
     text-align: center;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--text-color);
     transition: background var(--transition-speed), color var(--transition-speed);
 }
 
 .download a.cta-button {
-    background: var(--text-light);
-    color: var(--primary-color);
-    transition: background var(--transition-speed), color var(--transition-speed);
+    /* Removed as we are using the App Store badge instead */
+}
+
+.download .app-store-badge {
+    width: 150px; /* Adjust as needed to meet Apple's minimum height of 40px */
+    height: auto;
+    max-width: 100%;
+    margin-top: 1em;
 }
 
 /* Footer */
@@ -277,7 +281,7 @@ a:hover, a:focus {
     max-width: 600px;
     margin: 0 auto;
     padding: 2em;
-    background: var(--background-light);
+    background: var(--background-container);
     border-radius: 8px;
 }
 
@@ -345,6 +349,10 @@ a:hover, a:focus {
     .cta-button {
         padding: 0.6em 1.2em;
         font-size: 0.9rem;
+    }
+
+    .download .app-store-badge {
+        width: 120px; /* Adjust for smaller screens */
     }
 }
 

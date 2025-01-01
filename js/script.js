@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
-    // Removed Theme Toggle for Dark Mode
-
     // Section Visibility on Scroll using Intersection Observer
     const sections = document.querySelectorAll('.section');
 
