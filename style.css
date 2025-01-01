@@ -5,7 +5,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: rgb(27, 26, 30, color-space: display-p3);
 }
 
 h1, h2, h3 {
