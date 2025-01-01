@@ -4,66 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexagon - Your Apple-Centric Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Hexagon is the ultimate task manager for Apple platforms. Stay organized, focused, and productive with seamless iCloud sync and natural language input.">
+    <meta name="keywords" content="Task Manager, Apple, iCloud Sync, Productivity, Focus Mode, Natural Language Input">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Hexagon - Your Apple-Centric Task Manager">
+    <meta property="og:description" content="Stay organized, focused, and productive with Hexagon, the ultimate task manager for Apple platforms.">
+    <meta property="og:image" content="images/HexLogo.png">
+    <meta property="og:url" content="https://www.hexagonapp.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hexagon - Your Apple-Centric Task Manager">
+    <meta name="twitter:description" content="Stay organized, focused, and productive with Hexagon, the ultimate task manager for Apple platforms.">
+    <meta name="twitter:image" content="images/HexLogo.png">
+    
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header class="hero">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="logo">
-                <img src="HexLogo.png" alt="Hexagon Logo" class="logo-img"> Hexagon
+                <picture>
+                    <source srcset="images/HexLogo.webp" type="image/webp">
+                    <img src="images/HexLogo.png" alt="Hexagon Logo" class="logo-img" loading="lazy">
+                </picture>
+                <span>Hexagon</span>
             </div>
-            <ul class="nav-links">
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                🌓
+            </button>
+            <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links" id="navigation">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#download">Download</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero-content">
-            <p>The ultimate task manager for Apple platforms. Stay organized, focused, and productive.</p>
+        <div class="hero-content section" id="main-content">
+            <h1>Hexagon: The Ultimate Task Manager for Apple Platforms</h1>
+            <p>Stay organized, focused, and productive.</p>
             <a href="#download" class="cta-button">Get Hexagon</a>
         </div>
     </header>
 
-    <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="features-container">
-            <div class="feature-item">
-                <h3>iCloud Sync</h3>
-                <p>Seamlessly sync tasks across your Apple devices using iCloud.</p>
+    <main>
+        <section id="features" class="features section">
+            <h2>Features</h2>
+            <div class="features-container">
+                <article class="feature-item">
+                    <h3>iCloud Sync</h3>
+                    <p>Seamlessly sync tasks across your Apple devices using iCloud.</p>
+                </article>
+                <article class="feature-item">
+                    <h3>Focus Mode</h3>
+                    <p>Stay focused with tailored views.</p>
+                </article>
+                <article class="feature-item">
+                    <h3>Natural Language Input</h3>
+                    <p>Add tasks quickly with natural language input, just like magic.</p>
+                </article>
             </div>
-            <div class="feature-item">
-                <h3>Focus Mode</h3>
-                <p>Stay focused with tailored views.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Natural Language Input</h3>
-                <p>Add tasks quickly with natural language input, just like magic.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="pricing" class="pricing">
-        <h2>Pricing</h2>
-        <div class="pricing-options">
-            <div class="pricing-plan">
-                <h3>Free</h3>
-                <p>Basic features for individuals.</p>
-                <p class="price">£0/month</p>
+        <section id="pricing" class="pricing section">
+            <h2>Pricing</h2>
+            <div class="pricing-options">
+                <div class="pricing-plan">
+                    <h3>Free</h3>
+                    <p>Basic features for individuals.</p>
+                    <p class="price">£0/month</p>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Pro</h3>
+                    <p>Advanced features for power users.</p>
+                    <p class="price">£4/month or £30/year</p>
+                </div>
             </div>
-            <div class="pricing-plan">
-                <h3>Pro</h3>
-                <p>Advanced features for power users.</p>
-                <p class="price">£4/month or £30/year</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="download" class="download">
-        <h2>Download Hexagon</h2>
-        <p>Available now on the App Store for iPhone, iPad, and Mac.</p>
-        <a href="#" class="cta-button">Download on the App Store</a>
-    </section>
+        <section id="download" class="download section">
+            <h2>Download Hexagon</h2>
+            <p>Available now on the App Store for iPhone, iPad, and Mac.</p>
+            <a href="#" class="cta-button">Download on the App Store</a>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer-container">
@@ -71,5 +118,30 @@
             <p><a href="mailto:support@hexagonapp.com">support@hexagonapp.com</a></p>
         </div>
     </footer>
+    
+    <!-- Contact Form (Optional) -->
+    <!-- Uncomment and customize if needed
+    <section id="contact" class="contact section">
+        <h2>Contact Us</h2>
+        <form action="/submit-form" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name<span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="email">Email<span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="message">Message<span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+    -->
+    
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>
