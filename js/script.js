@@ -9,23 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
-    // Theme Toggle for Dark Mode
-    const themeToggle = document.querySelector('.theme-toggle');
-    const body = document.body;
-
-    // Load saved theme from localStorage
-    if(localStorage.getItem('theme') === 'dark'){
-        body.classList.add('dark-mode');
-    }
-
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        let theme = 'light';
-        if(body.classList.contains('dark-mode')){
-            theme = 'dark';
-        }
-        localStorage.setItem('theme', theme);
-    });
+    // Removed Theme Toggle for Dark Mode
 
     // Section Visibility on Scroll using Intersection Observer
     const sections = document.querySelectorAll('.section');
