@@ -45,11 +45,10 @@ body {
 }
 
 .navbar .logo-img {
-    width: 100px; /* Desired width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 60px; /* Optional: constrain height */
-    object-fit: contain; /* Ensure the image is fully visible */
-    display: block; /* Remove inline-block or other unexpected layout issues */
+    width: 150px; 
+    height: auto; 
+    object-fit: contain;
+    display: block; 
 }
 
 .hero h1 {
