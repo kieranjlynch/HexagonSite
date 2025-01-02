@@ -44,11 +44,12 @@ body {
     border-bottom-right-radius: var(--border-radius);
 }
 
-.logo-img {
-    width: 100px; /* Set desired width */
+.navbar .logo-img {
+    width: 100px; /* Desired width */
     height: auto; /* Maintain aspect ratio */
-    max-height: 60px; /* Optional: set a maximum height */
-    object-fit: contain; /* Ensure the logo fits inside the container */
+    max-height: 60px; /* Optional: constrain height */
+    object-fit: contain; /* Ensure the image is fully visible */
+    display: block; /* Remove inline-block or other unexpected layout issues */
 }
 
 .hero h1 {
